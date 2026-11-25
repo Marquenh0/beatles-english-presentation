@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#171713">
+  <meta name="description" content="An interactive presentation on The Beatles: history, legacy, and influence on music.">
+  <title>The Beatles — History, Legacy & Influence</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <main class="presentation" id="presentation" aria-label="The Beatles interactive presentation">
+    <div class="stage" id="stage" aria-live="off">
+      <section class="slide slide--hero is-active" id="slide-1" data-title="The Beatles" aria-hidden="false">
+        <div class="paper-grain" aria-hidden="true"></div>
+        <div class="slide-kicker anim"><span>THE SOUND OF A GENERATION</span><span>01 — 10</span></div>
+        <div class="hero-copy">
+          <p class="eyebrow anim">Liverpool · 1960—1970</p>
+          <h1 class="hero-title anim">THE<br><em>BEATLES</em></h1>
+          <p class="hero-subtitle anim">History, legacy<br>&amp; influence on music</p>
+          <p class="hero-foot anim">Four musicians. A world of change.</p>
+        </div>
+        <aside class="class-info anim" aria-labelledby="class-info-heading">
+          <h2 class="class-info-heading" id="class-info-heading">CLASS PRESENTATION</h2>
+          <dl class="class-info-grid stagger">
+            <div class="class-info-item">
+              <dt>School</dt>
+              <dd>CEOS Escola de Idiomas</dd>
+            </div>
+            <div class="class-info-item">
+              <dt>Date</dt>
+              <dd><time datetime="2026-11-25">November 25, 2026</time></dd>
+            </div>
+            <div class="class-info-item">
+              <dt>Teacher</dt>
+              <dd>Vinícius</dd>
+            </div>
+            <div class="class-info-item class-info-item--students">
+              <dt>Students</dt>
+              <dd>Marcos Vinícius, Beatriz, Maria E. Messias, and Maria Eduarda</dd>
+            </div>
+          </dl>
+        </aside>
+        <div class="hero-collage anim" aria-label="A scrapbook collage inspired by the supplied Beatles references">
+          <div class="hero-paper"><img src="estetica%20beatles%203.jpg" alt="Vintage Beatles scrapbook collage with sheet music, photographs, and cassette tapes"></div>
+          <figure class="hero-photo"><img src="foto%20dos%20beatles%204.jpg" alt="Black and white portrait of the four Beatles"></figure>
+          <span class="hero-stamp">LIVERPOOL<br><small>ENGLAND</small></span>
+          <span class="hero-caption">An enduring story<br>in four parts</span>
+          <span class="record record--hero" aria-hidden="true"></span>
+        </div>
+        <div class="edge-note anim" aria-hidden="true">LISTEN CLOSELY · THE STORY BEGINS</div>
+      </section>
+
+      <section class="slide slide--members" id="slide-2" data-title="The Four Beatles" aria-hidden="true" inert>
+        <div class="paper-grain" aria-hidden="true"></div>
+        <div class="slide-kicker anim"><span>FOUR DISTINCT VOICES</span><span>02 — 10</span></div>
+        <div class="members-heading">
+          <p class="eyebrow anim">Meet the band</p>
+          <h2 class="display-title anim">The Four<br><em>Beatles</em></h2>
+          <p class="deck-copy anim">Each member brought a different sound and creative strength to the group.</p>
+        </div>
+        <figure class="members-photo photo-frame anim">
+          <img src="foto%20dos%20beatles%203.jpeg" alt="Close black and white group portrait of the Beatles">
+          <figcaption>John · Paul · George · Ringo</figcaption>
+        </figure>
+        <div class="member-list stagger">
+          <article class="member-card"><span class="member-index">01</span><div><h3>John Lennon</h3><p>Vocals, guitar &amp; songwriting</p></div><span class="member-mark">✳</span></article>
+          <article class="member-card"><span class="member-index">02</span><div><h3>Paul McCartney</h3><p>Bass, vocals &amp; melodic songwriting</p></div><span class="member-mark">♪</span></article>
+          <article class="member-card"><span class="member-index">03</span><div><h3>George Harrison</h3><p>Guitar, songwriting &amp; Indian influences</p></div><span class="member-mark">✦</span></article>
+          <article class="member-card"><span class="member-index">04</span><div><h3>Ringo Starr</h3><p>Drums, vocals &amp; a distinctive style</p></div><span class="member-mark">◉</span></article>
+        </div>
+        <span class="margin-note anim">THE BAND, TOGETHER</span>
+      </section>
+
+      <section class="slide slide--beginning" id="slide-3" data-title="The Beginning" aria-hidden="true" inert>
+        <div class="paper-grain" aria-hidden="true"></div>
+        <div class="slide-kicker anim"><span>FROM LIVERPOOL TO THE WORLD</span><span>03 — 10</span></div>
+        <div class="beginning-title">
+          <p class="eyebrow anim">The early years</p>
+          <h2 class="display-title anim">The<br><em>Beginning</em></h2>
+        </div>
+        <figure class="beginning-photo photo-frame anim">
+          <img src="foto%20dos%20beatles%208.jpg" alt="The young Beatles walking together in Liverpool">
+          <figcaption>Four young musicians on the move</figcaption>
+        </figure>
+        <div class="timeline stagger" aria-label="Early Beatles timeline">
+          <article class="timeline-item"><span class="timeline-year">1960</span><span class="timeline-dot"></span><h3>Liverpool</h3><p>The band forms in their home city.</p></article>
+          <article class="timeline-item"><span class="timeline-year">EARLY YEARS</span><span class="timeline-dot"></span><h3>Club stages</h3><p>Small performances in Liverpool and Hamburg sharpen their sound.</p></article>
+          <article class="timeline-item"><span class="timeline-year">1962</span><span class="timeline-dot"></span><h3><i>Love Me Do</i></h3><p>The single marks the start of their major success.</p></article>
+        </div>
+        <span class="timeline-rule" aria-hidden="true"></span>
+        <p class="beginning-note anim">Every long journey starts with a first song.</p>
+      </section>
+
+      <section class="slide slide--mania" id="slide-4" data-title="Beatlemania" aria-hidden="true" inert>
+        <div class="paper-grain" aria-hidden="true"></div>
+        <div class="slide-kicker anim"><span>WHEN THE CROWD BECAME PART OF THE STORY</span><span>04 — 10</span></div>
+        <figure class="mania-collage anim">
+          <img src="estetica%20beatles%201.jpg" alt="Beatles memorabilia collage with newspaper clippings, sheet music, and photographs">
+          <figcaption>New voices. New headlines.</figcaption>
+        </figure>
+        <div class="mania-copy">
+          <p class="eyebrow anim">A worldwide phenomenon</p>
+          <span class="year-burst anim">1964</span>
+          <h2 class="display-title anim">Hello,<br><em>America.</em></h2>
+          <p class="deck-copy anim">Beatlemania carried the band from packed performances at home to an international audience.</p>
+          <div class="mania-tags stagger"><span>FAN FRENZY</span><span>GLOBAL HEADLINES</span><span>THE U.S. ARRIVAL</span></div>
+        </div>
+        <span class="paper-tape tape--mania" aria-hidden="true"></span>
+      </section>
+
+      <section class="slide slide--sound" id="slide-5" data-title="A Musical Revolution" aria-hidden="true" inert>
+        <div class="paper-grain" aria-hidden="true"></div>
+        <div class="slide-kicker anim"><span>THE STUDIO BECOMES AN INSTRUMENT</span><span>05 — 10</span></div>
+        <div class="sound-copy">
+          <p class="eyebrow anim">A changing sound</p>
+          <h2 class="display-title anim">A musical<br><em>revolution</em></h2>
+          <p class="deck-copy anim">Their music grew from simple, energetic songs into more experimental and psychedelic compositions.</p>
+          <div class="sound-points stagger">
+            <div><span>01</span><p>New instruments, sounds and recording techniques</p></div>
+            <div><span>02</span><p>Albums shaped as complete creative works</p></div>
+          </div>
+        </div>
+        <figure class="sound-sleeve anim">
+          <div class="sleeve-image"><img src="foto%20dos%20beatles%206.png" alt="The Beatles in a later, more experimental era"></div>
+          <div class="sleeve-label"><span>THE BEATLES</span><strong>Studio experiments</strong><small>Sgt. Pepper’s Lonely Hearts Club Band</small></div>
+        </figure>
+        <div class="staff-lines" aria-hidden="true"><span>♪</span><span>♩</span><span>♫</span></div>
+        <p class="sound-caption anim">A new chapter in rock and pop.</p>
+      </section>
+
+      <section class="slide slide--culture" id="slide-6" data-title="Cultural Legacy" aria-hidden="true" inert>
+        <div class="paper-grain" aria-hidden="true"></div>
+        <div class="slide-kicker anim"><span>MORE THAN MUSIC</span><span>06 — 10</span></div>
+        <div class="culture-title">
+          <p class="eyebrow anim">A mark on everyday life</p>
+          <h2 class="display-title anim">Cultural<br><em>legacy</em></h2>
+        </div>
+        <figure class="culture-photo photo-frame anim">
+          <img src="foto%20dos%20beatles%205.webp" alt="The Beatles wearing colorful late-1960s clothing">
+          <figcaption>Style became part of the sound.</figcaption>
+        </figure>
+        <div class="culture-collage stagger">
+          <article class="culture-note culture-note--hair"><span class="note-icon">✂</span><h3>Fashion &amp; hair</h3><p>Their looks became a reference for young people.</p></article>
+          <article class="culture-note culture-note--youth"><span class="note-icon">✦</span><h3>Youth culture</h3><p>Their clothes and attitudes shaped the spirit of the decade.</p></article>
+          <article class="culture-note culture-note--artists"><span class="note-icon">♫</span><h3>Artists &amp; industry</h3><p>Later musicians followed their example of writing, producing and trying new sounds.</p></article>
+          <div class="culture-sticker">HEARD<br>EVERYWHERE</div>
+        </div>
+        <span class="culture-side-note anim">A LEGACY THAT CROSSES GENERATIONS</span>
+      </section>
+
+      <section class="slide slide--ending" id="slide-7" data-title="The End of an Era" aria-hidden="true" inert>
+        <div class="paper-grain" aria-hidden="true"></div>
+        <div class="slide-kicker anim"><span>FOUR PATHS, ONE SHARED HISTORY</span><span>07 — 10</span></div>
+        <figure class="ending-photo anim"><img src="foto%20dos%20beatles%203.jpg" alt="The Beatles performing together on a rooftop"></figure>
+        <div class="ending-paper">
+          <p class="eyebrow anim">1970</p>
+          <h2 class="display-title anim">The end<br>of an <em>era</em></h2>
+          <p class="deck-copy anim">Personal and creative differences contributed to the band's breakup.</p>
+          <div class="ending-rule anim"></div>
+          <p class="ending-after anim">Their individual careers continued. Their shared music kept reaching new generations.</p>
+        </div>
+        <span class="ending-caption anim">THE MUSIC OUTLIVED THE MOMENT</span>
+      </section>
+
+      <section class="slide slide--yesterday" id="slide-8" data-title="Yesterday (2019)" aria-hidden="true" inert>
+        <div class="paper-grain" aria-hidden="true"></div>
+        <div class="slide-kicker anim"><span>A FILM ABOUT A WORLD WITHOUT THE SONGS</span><span>08 — 10</span></div>
+        <div class="film-copy">
+          <p class="eyebrow anim">A musical comedy romance</p>
+          <h2 class="film-title anim"><em>Yesterday</em><span>2019</span></h2>
+          <div class="film-credits stagger">
+            <p><span>DIRECTED BY</span>Danny Boyle</p>
+            <p><span>WRITTEN BY</span>Richard Curtis</p>
+            <p><span>STARRING</span>Himesh Patel · Lily James<br>Kate McKinnon · Ed Sheeran</p>
+          </div>
+          <p class="film-synopsis anim">After a mysterious blackout and an accident, musician Jack Malik wakes in a world where The Beatles never existed. He is the only one who remembers their songs.</p>
+        </div>
+        <div class="film-art anim">
+          <div class="film-frame film-frame--top"><img src="foto%20dos%20beatles%202.jpg" alt="The Beatles crossing Abbey Road"></div>
+          <div class="film-ticket"><span>IMAGINE</span><strong>A WORLD<br>WITHOUT<br>THE BEATLES</strong><small>ONE MUSICIAN REMEMBERS</small></div>
+          <span class="film-reel" aria-hidden="true"></span>
+        </div>
+      </section>
+
+      <section class="slide slide--whatif" id="slide-9" data-title="A World Without The Beatles" aria-hidden="true" inert>
+        <div class="paper-grain" aria-hidden="true"></div>
+        <div class="slide-kicker anim"><span>THE QUESTION AT THE HEART OF THE FILM</span><span>09 — 10</span></div>
+        <div class="whatif-art anim">
+          <div class="whatif-photo"><img src="foto%20dos%20beatles%202.jpg" alt="The Beatles on Abbey Road, evoking the musical history Jack remembers"></div>
+          <div class="missing-note"><span>IN THIS WORLD…</span><strong>NO<br>BEATLES</strong><i aria-hidden="true"></i></div>
+          <span class="whatif-caption">A familiar story, suddenly missing.</span>
+        </div>
+        <div class="whatif-copy">
+          <p class="eyebrow anim">A reflective thought experiment</p>
+          <h2 class="display-title anim">A world<br>without <em>them</em></h2>
+          <p class="deck-copy anim"><i>Yesterday</i> asks us to imagine a different musical history—and to notice how deeply these songs matter.</p>
+          <div class="reflection-list stagger">
+            <p><span>01</span> Artistic recognition and honesty</p>
+            <p><span>02</span> Friendship and personal meaning</p>
+            <p><span>03</span> Music that connects generations</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide slide--final" id="slide-10" data-title="Conclusion" aria-hidden="true" inert>
+        <div class="paper-grain" aria-hidden="true"></div>
+        <div class="slide-kicker anim"><span>THE LAST WORD</span><span>10 — 10</span></div>
+        <div class="final-image anim"><img src="foto%20dos%20beatles%204.jpg" alt="The Beatles together, closing the story with a portrait of the band"></div>
+        <div class="final-copy">
+          <p class="eyebrow anim">From Liverpool to every generation</p>
+          <h2 class="final-quote anim">“The Beatles did not just become part of music history.<br><em>They helped write it.</em>”</h2>
+          <p class="final-deck anim">Their music changed, the band ended, and the influence continued.</p>
+          <span class="final-mark anim">THE END · PLAY IT AGAIN</span>
+        </div>
+        <span class="final-record" aria-hidden="true"></span>
+      </section>
+
+      <nav class="deck-controls" aria-label="Presentation controls">
+        <button class="control-button" id="previous" type="button" aria-label="Previous slide" title="Previous slide (←)"><span aria-hidden="true">←</span></button>
+        <div class="deck-status">
+          <div class="chapter-ticks" id="chapter-ticks" aria-label="Choose a slide">
+            <button type="button" data-go="0" aria-label="Go to slide 1: The Beatles" aria-current="true"></button>
+            <button type="button" data-go="1" aria-label="Go to slide 2: The Four Beatles"></button>
+            <button type="button" data-go="2" aria-label="Go to slide 3: The Beginning"></button>
+            <button type="button" data-go="3" aria-label="Go to slide 4: Beatlemania"></button>
+            <button type="button" data-go="4" aria-label="Go to slide 5: A Musical Revolution"></button>
+            <button type="button" data-go="5" aria-label="Go to slide 6: Cultural Legacy"></button>
+            <button type="button" data-go="6" aria-label="Go to slide 7: The End of an Era"></button>
+            <button type="button" data-go="7" aria-label="Go to slide 8: Yesterday"></button>
+            <button type="button" data-go="8" aria-label="Go to slide 9: A World Without The Beatles"></button>
+            <button type="button" data-go="9" aria-label="Go to slide 10: Conclusion"></button>
+          </div>
+          <div class="progress-track" role="progressbar" aria-label="Presentation progress" aria-valuemin="1" aria-valuemax="10" aria-valuenow="1"><span id="progress-fill"></span></div>
+          <span class="slide-counter"><strong id="current-slide">01</strong><span>/</span><span>10</span></span>
+        </div>
+        <button class="control-button" id="next" type="button" aria-label="Next slide" title="Next slide (→ or Space)"><span aria-hidden="true">→</span></button>
+        <button class="control-button fullscreen-button" id="fullscreen" type="button" aria-label="Enter full screen" title="Full screen (F)"><span aria-hidden="true">⛶</span></button>
+        <span class="keyboard-hint">← → <span>OR</span> SPACE</span>
+      </nav>
+    </div>
+  </main>
+</body>
+</html>
