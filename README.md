@@ -4,7 +4,7 @@ An English, 10-slide presentation about The Beatles, their history and legacy, a
 
 ## Visual concept
 
-The deck treats each slide as a page from a vintage music scrapbook. Aged paper, monochrome photography, record and ticket motifs, sheet-music details, and asymmetrical photo layers draw from the three supplied “estetica beatles” references. The opening slide also includes the school, date, student names, and teacher in a compact class-information card. The palette stays with cream, charcoal, muted green, sepia, and small red accents.
+The deck treats each slide as a page from a vintage music scrapbook. Aged paper, monochrome photography, record and ticket motifs, sheet-music details, and asymmetrical photo layers draw from the three supplied “estetica beatles” references. The opening slide also includes the school, date, student names, and teacher in a compact class-information card, with a 1964 and Beatlemania editorial cover. The *Yesterday* slide features the supplied official film poster. The palette stays with cream, charcoal, muted green, sepia, and small red accents.
 
 ## Project files
 
@@ -14,6 +14,7 @@ The deck treats each slide as a page from a vintage music scrapbook. Aged paper,
 - `server.js` — optional dependency-free local static server.
 - `presentation-script.md` — the English speaking script for all ten slides.
 - The supplied `foto dos beatles…` and `estetica beatles…` image files in this folder are used directly by the website.
+- `yesterday-official-poster.png` — the supplied *Yesterday* theatrical poster used on Slide 8.
 
 ## Open and present
 

@@ -28,10 +28,10 @@ button { font: inherit; }
 .eyebrow { margin: 0 0 1.2em; font: 500 clamp(9px, .8vw, 13px)/1.3 var(--mono); letter-spacing: .18em; text-transform: uppercase; color: var(--red); }
 .display-title { margin: 0; font: 700 clamp(40px, 5.65vw, 88px)/.91 var(--serif); letter-spacing: -.05em; color: var(--ink); }
 .display-title em { color: var(--green); font-weight: 600; }
-.deck-copy { max-width: 33em; margin: 1.3em 0 0; color: #514b40; font-size: clamp(14px, 1.25vw, 19px); line-height: 1.52; }
+.deck-copy { max-width: 33em; margin: 1.3em 0 0; color: #514b40; font-size: clamp(15px, 1.3vw, 20px); line-height: 1.52; }
 .photo-frame { margin: 0; padding: 10px 10px 36px; background: #fffaf0; box-shadow: 0 16px 38px #38271330; }
 .photo-frame img { display: block; width: 100%; height: 100%; object-fit: cover; filter: saturate(.76) contrast(1.02); }
-.photo-frame figcaption { padding: 10px 2px 0; color: #5c5345; font: 400 10px/1.2 var(--mono); letter-spacing: .07em; }
+.photo-frame figcaption { padding: 10px 2px 0; color: #5c5345; font: 400 11px/1.2 var(--mono); letter-spacing: .07em; }
 .paper-tape { position: absolute; z-index: 5; width: 100px; height: 25px; background: #e7d4a6b5; transform: rotate(-8deg); box-shadow: 0 1px 4px #40321b25; }
 .record { width: 170px; aspect-ratio: 1; border-radius: 50%; background: repeating-radial-gradient(circle, #211f1c 0 1px, #34312c 2px 3px, #151513 4px 5px); box-shadow: 0 9px 20px #261d144a; }
 
@@ -49,11 +49,20 @@ button { font: inherit; }
 .class-info-item dt { color: var(--red); font: 500 8px/1.2 var(--mono); letter-spacing: .1em; text-transform: uppercase; }
 .class-info-item dd { margin: 3px 0 0; color: #302d27; font: 600 clamp(10px, .86vw, 12px)/1.32 var(--sans); }
 .class-info-item--students { grid-column: 1 / -1; }
-.hero-collage { position: absolute; top: 14%; right: 8.6%; width: 36%; height: 70%; }
+.hero-collage { position: absolute; top: 13.5%; right: 7.5%; width: 38%; height: 73%; }
 .hero-paper { position: absolute; inset: 0 5% 0 0; overflow: hidden; transform: rotate(2deg); border: 9px solid #f9f1e1; box-shadow: 0 22px 40px #3525163b; }
 .hero-paper img { width: 100%; height: 100%; object-fit: cover; object-position: center 42%; filter: saturate(.68); }
 .hero-photo { position: absolute; z-index: 2; left: -22%; bottom: 11%; width: 71%; height: 45%; margin: 0; padding: 8px 8px 25px; transform: rotate(-5deg); background: #fff9eb; box-shadow: 0 12px 28px #251b1640; }
 .hero-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center 32%; filter: grayscale(1); }
+.hero-year-card { position: absolute; z-index: 5; top: 23%; left: 15%; width: 78%; min-height: 44%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 5px; padding: 3% 2%; border: 1px solid #a58d5b; color: var(--ink); text-align: center; background: #f8efddeF; box-shadow: 0 15px 32px #3224164a; transform: rotate(2deg); }
+.hero-year-kicker { color: #695d47; font: 500 clamp(7px, .7vw, 10px)/1.2 var(--mono); letter-spacing: .14em; }
+.hero-year-number { color: var(--red); font: 800 clamp(94px, 13vw, 200px)/1.05 var(--serif); letter-spacing: -.1em; text-shadow: 3px 4px 0 #d5c49f66; }
+.hero-beatlemania { padding: 6px 14px; border: 1px solid var(--red); color: var(--red); font: 700 clamp(12px, 1.45vw, 21px)/1 var(--mono); letter-spacing: .09em; transform: rotate(-2deg); }
+.hero-clippings { position: absolute; z-index: 6; inset: 0; pointer-events: none; }
+.hero-clipping { position: absolute; display: block; padding: 8px 10px; border: 1px solid #a48e63; color: #52442f; background: #f7eedb; box-shadow: 0 5px 12px #35251629; font: 500 clamp(7px, .72vw, 10px)/1.2 var(--mono); letter-spacing: .08em; white-space: nowrap; }
+.hero-clipping--arrival { top: 8%; left: -2%; transform: rotate(-8deg); }
+.hero-clipping--frenzy { right: -2%; bottom: 22%; transform: rotate(6deg); }
+.hero-clipping--headlines { bottom: 3%; left: 14%; transform: rotate(-3deg); }
 .hero-stamp { position: absolute; z-index: 3; right: -4%; top: 8%; padding: 12px 16px; border: 1px solid var(--red); color: var(--red); text-align: center; font: 600 12px/1.3 var(--mono); letter-spacing: .08em; transform: rotate(8deg); }
 .hero-stamp small { font-size: 8px; }
 .hero-caption { position: absolute; z-index: 4; right: -4%; bottom: 7%; padding: 12px 16px; color: var(--paper-light); background: var(--green); font: 500 10px/1.45 var(--mono); letter-spacing: .05em; transform: rotate(-3deg); }
@@ -64,13 +73,13 @@ button { font: inherit; }
 .slide--members { background: #f2e8d4; }
 .members-heading { position: absolute; left: 7%; top: 17%; width: 35%; }
 .members-heading .display-title { font-size: clamp(48px, 6.2vw, 94px); }
-.members-photo { position: absolute; top: 17%; right: 8%; width: 28%; height: 47%; transform: rotate(2.4deg); }
+.members-photo { position: absolute; top: 16%; right: 8%; width: 31%; height: 52%; transform: rotate(2.4deg); }
 .members-photo img { object-position: center 50%; }
 .member-list { position: absolute; left: 7%; bottom: 10%; width: 78%; display: grid; grid-template-columns: 1fr 1fr; gap: 12px 18px; }
 .member-card { display: flex; align-items: center; min-height: 72px; padding: 12px 16px; background: #f9f3e6; border-bottom: 1px solid #c9b998; box-shadow: 0 5px 13px #5943280e; }
 .member-index { align-self: flex-start; margin: 2px 13px 0 0; color: var(--red); font: 500 10px var(--mono); }
 .member-card h3 { margin: 0 0 4px; font: 700 clamp(15px, 1.35vw, 20px)/1.1 var(--serif); }
-.member-card p { margin: 0; color: #6e6555; font-size: clamp(10px, .88vw, 13px); }
+.member-card p { margin: 0; color: #6e6555; font-size: clamp(11px, .92vw, 14px); }
 .member-mark { margin-left: auto; padding-left: 8px; color: var(--green); font-size: 19px; }
 .margin-note { position: absolute; top: 38%; right: 5%; writing-mode: vertical-rl; color: #837b6e; font: 9px var(--mono); letter-spacing: .13em; }
 
@@ -78,20 +87,20 @@ button { font: inherit; }
 .slide--beginning { background: #e6dac0; }
 .beginning-title { position: absolute; z-index: 2; top: 17%; left: 7%; }
 .beginning-title .display-title { font-size: clamp(47px, 6vw, 90px); }
-.beginning-photo { position: absolute; top: 17%; right: 8%; width: 36%; height: 40%; transform: rotate(2deg); }
+.beginning-photo { position: absolute; top: 16%; right: 8%; width: 40%; height: 46%; transform: rotate(2deg); }
 .beginning-photo img { object-position: center 43%; filter: grayscale(1) sepia(.14); }
 .timeline { position: absolute; left: 8%; right: 8%; bottom: 16%; z-index: 3; display: grid; grid-template-columns: 1fr 1.15fr 1fr; gap: 2.4%; }
 .timeline-item { position: relative; padding: 26px 18px 0 0; }
-.timeline-year { color: var(--red); font: 500 clamp(10px, .88vw, 13px) var(--mono); letter-spacing: .09em; }
+.timeline-year { color: var(--red); font: 500 clamp(11px, .92vw, 14px) var(--mono); letter-spacing: .09em; }
 .timeline-dot { position: absolute; top: 0; left: 0; width: 11px; height: 11px; border: 2px solid var(--paper-light); border-radius: 50%; background: var(--red); box-shadow: 0 0 0 1px var(--red); }
 .timeline-item h3 { margin: 12px 0 5px; font: 700 clamp(17px, 1.7vw, 25px) var(--serif); }
-.timeline-item p { max-width: 21em; margin: 0; color: #5a5144; font-size: clamp(11px, .95vw, 14px); line-height: 1.45; }
+.timeline-item p { max-width: 21em; margin: 0; color: #5a5144; font-size: clamp(12px, 1vw, 15px); line-height: 1.45; }
 .timeline-rule { position: absolute; z-index: 1; left: 8%; right: 8%; bottom: calc(16% + 66px); height: 1px; background: #98876b; }
 .beginning-note { position: absolute; left: 8%; top: 49%; color: #786c57; font: italic 15px var(--serif); }
 
 /* 04 — Beatlemania */
 .slide--mania { background: #efe4ce; }
-.mania-collage { position: absolute; left: 7.5%; top: 16%; bottom: 16%; width: 40%; margin: 0; padding: 11px 11px 36px; background: #fffaee; box-shadow: 0 17px 35px #40301d35; transform: rotate(-2.2deg); }
+.mania-collage { position: absolute; left: 7.5%; top: 15%; bottom: 15%; width: 43%; margin: 0; padding: 11px 11px 36px; background: #fffaee; box-shadow: 0 17px 35px #40301d35; transform: rotate(-2.2deg); }
 .mania-collage img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 31%; filter: saturate(.78); }
 .mania-collage figcaption { position: absolute; bottom: 12px; left: 15px; color: #675c4a; font: 9px var(--mono); letter-spacing: .06em; }
 .mania-copy { position: absolute; top: 17%; right: 8%; width: 39%; }
@@ -99,7 +108,7 @@ button { font: inherit; }
 .year-burst { display: block; margin: 0 0 5px -3px; color: var(--red); font: 700 clamp(42px, 6vw, 88px)/.9 var(--serif); letter-spacing: -.08em; }
 .mania-copy .deck-copy { max-width: 23em; }
 .mania-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 24px; }
-.mania-tags span { padding: 8px 10px; border: 1px solid #8c7652; color: #5c4c32; font: 500 8px var(--mono); letter-spacing: .1em; }
+.mania-tags span { padding: 8px 10px; border: 1px solid #8c7652; color: #5c4c32; font: 500 9px var(--mono); letter-spacing: .1em; }
 .tape--mania { top: 14%; left: 26%; transform: rotate(4deg); }
 
 /* 05 — sound */
@@ -109,9 +118,9 @@ button { font: inherit; }
 .sound-copy .deck-copy { max-width: 29em; }
 .sound-points { display: grid; gap: 12px; margin-top: 23px; max-width: 34em; }
 .sound-points > div { display: flex; gap: 14px; align-items: baseline; padding-bottom: 9px; border-bottom: 1px solid #b09c77; }
-.sound-points span { color: var(--red); font: 500 10px var(--mono); }
-.sound-points p { margin: 0; color: #464137; font-size: clamp(11px, 1vw, 15px); }
-.sound-sleeve { position: absolute; top: 19%; right: 11%; width: 31%; height: 60%; padding: 15px 15px 0; margin: 0; background: #23231f; box-shadow: 18px 18px 0 #ab8d56; transform: rotate(3deg); }
+.sound-points span { color: var(--red); font: 500 11px var(--mono); }
+.sound-points p { margin: 0; color: #464137; font-size: clamp(12px, 1.05vw, 16px); }
+.sound-sleeve { position: absolute; top: 17%; right: 8%; width: 34%; height: 65%; padding: 15px 15px 0; margin: 0; background: #23231f; box-shadow: 18px 18px 0 #ab8d56; transform: rotate(3deg); }
 .sleeve-image { height: 74%; overflow: hidden; background: #eee0bf; }
 .sleeve-image img { width: 100%; height: 100%; object-fit: cover; object-position: center 28%; filter: saturate(.78); }
 .sleeve-label { display: flex; flex-direction: column; gap: 4px; padding: 9px 4px; color: #f1e7d2; text-align: left; }
@@ -125,9 +134,9 @@ button { font: inherit; }
 
 /* 06 — culture collage */
 .slide--culture { background: #eee2c9; }
-.culture-title { position: absolute; top: 17%; left: 7%; width: 33%; }
+.culture-title { position: absolute; top: 17%; left: 7%; width: 31%; }
 .culture-title .display-title { font-size: clamp(48px, 6.2vw, 94px); }
-.culture-photo { position: absolute; top: 20%; left: 41%; width: 28%; height: 36%; transform: rotate(-3deg); }
+.culture-photo { position: absolute; top: 19%; left: 39%; width: 28.5%; height: 41%; transform: rotate(-3deg); }
 .culture-photo img { object-position: center 31%; }
 .culture-collage { position: absolute; top: 19%; right: 7%; width: 24%; display: grid; gap: 13px; }
 .culture-note { position: relative; min-height: 103px; padding: 15px 17px 12px 48px; background: #faf4e7; box-shadow: 0 7px 15px #5c47260f; }
@@ -135,7 +144,7 @@ button { font: inherit; }
 .culture-note--youth { margin-left: 11px; transform: rotate(-1deg); }
 .culture-note--artists { margin-left: -8px; transform: rotate(.7deg); }
 .culture-note h3 { margin: 0 0 6px; font: 700 clamp(15px, 1.25vw, 19px) var(--serif); }
-.culture-note p { margin: 0; color: #655c4c; font-size: clamp(10px, .88vw, 13px); line-height: 1.35; }
+.culture-note p { margin: 0; color: #655c4c; font-size: clamp(11px, .95vw, 14px); line-height: 1.35; }
 .note-icon { position: absolute; top: 15px; left: 15px; color: var(--red); font-size: 22px; }
 .culture-sticker { position: absolute; top: calc(100% + 17px); left: 34%; display: grid; place-content: center; width: 76px; aspect-ratio: 1; border: 1px dashed #733b2c; border-radius: 50%; color: #733b2c; text-align: center; font: 500 7px/1.5 var(--mono); letter-spacing: .08em; transform: rotate(10deg); }
 .culture-side-note { position: absolute; left: 2.8%; bottom: 17%; writing-mode: vertical-rl; color: #837b6e; font: 8px var(--mono); letter-spacing: .16em; }
@@ -143,7 +152,7 @@ button { font: inherit; }
 /* 07 — breakup */
 .slide--ending { background: #24231f; color: #f4ead6; }
 .slide--ending .slide-kicker { color: #d7cdbb; }
-.ending-photo { position: absolute; inset: 0; margin: 0; opacity: .43; }
+.ending-photo { position: absolute; inset: 0; margin: 0; opacity: .5; }
 .ending-photo::after { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, #17171355, #17171327 47%, #171713ee 100%), linear-gradient(0deg, #17171373, transparent 50%); }
 .ending-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center; filter: grayscale(1) sepia(.24); }
 .ending-paper { position: absolute; z-index: 2; right: 8%; top: 18%; width: 42%; padding: 5.5% 4.2%; color: var(--ink); background: #f0e5d0ed; box-shadow: 0 17px 42px #0005; }
@@ -151,31 +160,34 @@ button { font: inherit; }
 .ending-paper .display-title em { color: var(--red); }
 .ending-paper .deck-copy { max-width: 22em; }
 .ending-rule { width: 68px; height: 2px; margin: 23px 0 17px; background: var(--red); }
-.ending-after { max-width: 26em; margin: 0; color: #50493d; font-size: clamp(12px, 1vw, 15px); line-height: 1.5; }
+.ending-after { max-width: 26em; margin: 0; color: #50493d; font-size: clamp(13px, 1.05vw, 16px); line-height: 1.5; }
 .ending-caption { position: absolute; z-index: 2; left: 7%; bottom: 10%; color: #e3d8c4; font: 500 9px var(--mono); letter-spacing: .16em; }
 
 /* 08 — film */
 .slide--yesterday { background: #e9dec8; }
-.film-copy { position: absolute; z-index: 3; top: 17%; left: 7%; width: 49%; }
+.film-copy { position: absolute; z-index: 3; top: 16%; left: 7%; width: 48%; }
 .film-title { display: flex; align-items: baseline; gap: 19px; margin: 0; font: 700 clamp(53px, 7.8vw, 118px)/.9 var(--serif); letter-spacing: -.07em; }
 .film-title em { color: var(--green); }
 .film-title span { color: var(--red); font: 500 11px var(--mono); letter-spacing: .12em; }
 .film-credits { display: grid; grid-template-columns: 1fr 1fr; gap: 13px 16px; max-width: 36em; margin-top: 26px; }
-.film-credits p { margin: 0; color: #403b32; font: 600 clamp(11px, 1vw, 15px)/1.45 var(--sans); }
+.film-credits p { margin: 0; color: #403b32; font: 600 clamp(12px, 1.05vw, 16px)/1.45 var(--sans); }
 .film-credits p:last-child { grid-column: 1 / -1; }
-.film-credits span { display: block; margin-bottom: 4px; color: var(--red); font: 500 8px var(--mono); letter-spacing: .13em; }
-.film-synopsis { max-width: 32em; margin: 23px 0 0; color: #524a3c; font-size: clamp(12px, 1.05vw, 16px); line-height: 1.55; }
-.film-art { position: absolute; top: 21%; right: 7%; width: 33%; height: 58%; }
-.film-frame { position: absolute; top: 0; left: 6%; width: 88%; height: 78%; padding: 9px 9px 29px; background: #fff9eb; box-shadow: 0 13px 31px #37271739; transform: rotate(3deg); }
+.film-credits span { display: block; margin-bottom: 4px; color: var(--red); font: 500 9px var(--mono); letter-spacing: .13em; }
+.film-synopsis { max-width: 32em; margin: 23px 0 0; color: #524a3c; font-size: clamp(13px, 1.1vw, 17px); line-height: 1.55; }
+.film-art { position: absolute; top: 16%; right: 6%; width: 39%; height: 75%; }
+.film-frame { position: absolute; z-index: 1; top: 11%; left: 0; width: 55%; height: 70%; padding: 9px 9px 29px; background: #fff9eb; box-shadow: 0 13px 31px #37271739; transform: rotate(-4deg); }
 .film-frame img { width: 100%; height: 100%; object-fit: cover; filter: saturate(.65); }
-.film-ticket { position: absolute; z-index: 2; right: -4%; bottom: -1%; display: flex; flex-direction: column; padding: 15px 19px; color: #f3e6ca; background: var(--red); box-shadow: 0 9px 18px #422a2066; transform: rotate(-5deg); }
+.film-poster { position: absolute; z-index: 4; top: 0; right: 3%; width: 69%; aspect-ratio: 13 / 20; margin: 0; padding: 8px 8px 28px; background: #fff9eb; box-shadow: 0 16px 34px #30231450; transform: rotate(2deg); }
+.film-poster img { display: block; width: 100%; height: 100%; object-fit: contain; background: #f7edda; }
+.film-poster figcaption { position: absolute; right: 8px; bottom: 8px; left: 8px; color: #665b48; text-align: center; font: 500 7px/1 var(--mono); letter-spacing: .08em; }
+.film-ticket { position: absolute; z-index: 5; left: -3%; bottom: 6%; display: flex; flex-direction: column; padding: 12px 15px; color: #f3e6ca; background: var(--red); box-shadow: 0 9px 18px #422a2066; transform: rotate(-5deg); }
 .film-ticket span, .film-ticket small { font: 500 8px var(--mono); letter-spacing: .14em; }
 .film-ticket strong { margin: 8px 0; font: 700 clamp(15px, 1.6vw, 24px)/.96 var(--serif); }
-.film-reel { position: absolute; right: -10%; top: -9%; width: 105px; aspect-ratio: 1; border: 17px dotted #211f1b; border-radius: 50%; opacity: .85; }
+.film-reel { position: absolute; z-index: 5; right: -6%; top: -6%; width: 110px; aspect-ratio: 1; border: 17px dotted #211f1b; border-radius: 50%; opacity: .85; }
 
 /* 09 — thought experiment */
 .slide--whatif { background: #d6c6a6; }
-.whatif-art { position: absolute; top: 20%; left: 7%; width: 41%; height: 62%; }
+.whatif-art { position: absolute; top: 18%; left: 7%; width: 44%; height: 66%; }
 .whatif-photo { position: absolute; inset: 0 9% 5% 0; overflow: hidden; border: 12px solid #faf4e7; box-shadow: 0 17px 36px #36291838; transform: rotate(-2deg); }
 .whatif-photo::after { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, #1a191660, transparent 70%); }
 .whatif-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center; filter: saturate(.62) sepia(.15); }
@@ -188,7 +200,7 @@ button { font: inherit; }
 .whatif-copy .display-title { font-size: clamp(47px, 6.5vw, 98px); }
 .whatif-copy .deck-copy { max-width: 28em; }
 .reflection-list { display: grid; gap: 10px; margin-top: 22px; }
-.reflection-list p { display: flex; align-items: baseline; gap: 13px; margin: 0; padding-bottom: 8px; border-bottom: 1px solid #b4a27e; color: #474035; font-size: clamp(11px, .95vw, 14px); }
+.reflection-list p { display: flex; align-items: baseline; gap: 13px; margin: 0; padding-bottom: 8px; border-bottom: 1px solid #b4a27e; color: #474035; font-size: clamp(12px, 1vw, 15px); }
 .reflection-list span { color: var(--red); font: 500 9px var(--mono); }
 
 /* 10 — close */
@@ -196,13 +208,13 @@ button { font: inherit; }
 .slide--final .slide-kicker { color: #dbd0bb; }
 .final-image { position: absolute; inset: 0; }
 .final-image::after { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, #151512 1%, #151512eb 37%, #15151277 73%, #15151285), linear-gradient(0deg, #151512a0, transparent 45%); }
-.final-image img { width: 100%; height: 100%; object-fit: cover; object-position: center 31%; opacity: .68; filter: grayscale(1) contrast(1.05); }
+.final-image img { width: 100%; height: 100%; object-fit: cover; object-position: center 31%; opacity: .72; filter: grayscale(1) contrast(1.05); }
 .final-copy { position: absolute; z-index: 3; left: 8%; top: 24%; width: 72%; }
 .slide--final .eyebrow { color: #d8bd80; }
 .final-quote { max-width: 13em; margin: 0; color: #f8efdd; font: 600 clamp(36px, 5.45vw, 82px)/1.08 var(--serif); letter-spacing: -.045em; }
 .final-quote em { color: #e3c580; }
-.final-deck { margin: 25px 0 0; color: #e3d7c3; font-size: clamp(13px, 1.15vw, 17px); }
-.final-mark { display: inline-block; margin-top: 43px; padding: 10px 13px; border: 1px solid #d6bd83; color: #e9d6aa; font: 500 9px var(--mono); letter-spacing: .14em; }
+.final-deck { margin: 25px 0 0; color: #e3d7c3; font-size: clamp(14px, 1.2vw, 18px); }
+.final-mark { display: inline-block; margin-top: 43px; padding: 10px 13px; border: 1px solid #d6bd83; color: #e9d6aa; font: 500 10px var(--mono); letter-spacing: .14em; }
 .final-record { position: absolute; right: -5%; bottom: -34%; width: 42%; aspect-ratio: 1; border: 30px solid #f1e7d5; border-radius: 50%; opacity: .12; box-shadow: inset 0 0 0 3px #f1e7d5, inset 0 0 0 36px #1f201b, inset 0 0 0 38px #f1e7d5; }
 
 /* Navigation */
@@ -237,47 +249,55 @@ button { font: inherit; }
   .class-info-grid { grid-template-columns: 1fr 1fr; gap: 8px 12px; }
   .class-info-item dt { font-size: 7px; }
   .class-info-item dd { font-size: clamp(9px, 2.5vw, 11px); }
-  .hero-collage { top: 25%; right: 5%; width: 40%; height: 35%; }
+  .hero-collage { top: 25%; right: 5%; width: 43%; height: 39%; }
   .hero-photo { left: -20%; width: 82%; height: 39%; }
+  .hero-year-card { top: 22%; left: 12%; width: 84%; min-height: 50%; gap: 4px; padding: 3% 2%; }
+  .hero-year-kicker { font-size: 7px; }
+  .hero-year-number { font-size: clamp(48px, 14vw, 88px); }
+  .hero-beatlemania { padding: 5px 9px; font-size: clamp(8px, 1.8vw, 12px); }
+  .hero-clipping { padding: 6px 7px; font-size: 6px; }
+  .hero-clipping--arrival { top: 8%; left: -3%; }
+  .hero-clipping--frenzy { right: -2%; bottom: 19%; }
+  .hero-clipping--headlines { bottom: 2%; left: 7%; }
   .hero-stamp { right: -7%; font-size: 9px; }
   .hero-caption { right: -5%; font-size: 8px; }
   .edge-note { display: none; }
   .members-heading { top: 13%; left: 6%; width: 55%; }
   .members-heading .display-title { font-size: clamp(42px, 10vw, 64px); }
-  .members-heading .deck-copy { max-width: 21em; font-size: 13px; }
-  .members-photo { top: 18%; right: 5%; width: 33%; height: 30%; }
+  .members-heading .deck-copy { max-width: 21em; font-size: 14px; }
+  .members-photo { top: 17%; right: 5%; width: 34%; height: 34%; }
   .member-list { left: 6%; bottom: 12%; width: 88%; gap: 8px; }
-  .member-card { min-height: 61px; padding: 8px; }
+  .member-card { min-height: 64px; padding: 8px; }
   .member-index { margin-right: 7px; font-size: 8px; }
   .member-card h3 { font-size: clamp(12px, 3vw, 17px); }
-  .member-card p { font-size: 9px; line-height: 1.3; }
+  .member-card p { font-size: 10px; line-height: 1.3; }
   .member-mark { display: none; }
   .margin-note { display: none; }
   .beginning-title { top: 13%; left: 6%; }
   .beginning-title .display-title { font-size: clamp(43px, 10vw, 65px); }
-  .beginning-photo { top: 13%; right: 6%; width: 40%; height: 31%; }
+  .beginning-photo { top: 13%; right: 6%; width: 43%; height: 35%; }
   .timeline { left: 7%; right: 6%; bottom: 16%; grid-template-columns: 1fr; gap: 9px; }
   .timeline-rule { top: 49%; bottom: 18%; left: 7%; right: auto; width: 1px; height: auto; }
   .timeline-item { padding: 0 0 0 22px; min-height: 64px; }
   .timeline-dot { top: 4px; left: -5px; width: 10px; height: 10px; }
-  .timeline-year { font-size: 9px; }
+  .timeline-year { font-size: 10px; }
   .timeline-item h3 { display: inline; margin: 0 0 0 8px; font-size: 17px; }
-  .timeline-item p { margin-top: 3px; max-width: none; font-size: 11px; }
+  .timeline-item p { margin-top: 3px; max-width: none; font-size: 12px; }
   .beginning-note { right: 6%; bottom: 9%; font-size: 12px; }
-  .mania-collage { left: 6%; top: 17%; bottom: 20%; width: 37%; }
+  .mania-collage { left: 6%; top: 16%; bottom: 19%; width: 40%; }
   .mania-copy { top: 17%; right: 6%; width: 48%; }
   .mania-copy .display-title { font-size: clamp(42px, 10vw, 69px); }
   .year-burst { font-size: clamp(36px, 8vw, 56px); }
-  .mania-copy .deck-copy { font-size: 12px; }
+  .mania-copy .deck-copy { font-size: 13px; }
   .mania-tags { gap: 5px; margin-top: 13px; }
-  .mania-tags span { padding: 6px; font-size: 6px; }
+  .mania-tags span { padding: 6px; font-size: 7px; }
   .tape--mania { left: 23%; }
   .sound-copy { left: 6%; top: 14%; width: 50%; }
   .sound-copy .display-title { font-size: clamp(39px, 9vw, 64px); }
-  .sound-copy .deck-copy { font-size: 12px; }
+  .sound-copy .deck-copy { font-size: 13px; }
   .sound-points { gap: 8px; margin-top: 15px; }
-  .sound-points p { font-size: 10px; }
-  .sound-sleeve { top: 22%; right: 7%; width: 35%; height: 48%; padding: 9px 9px 0; }
+  .sound-points p { font-size: 11px; }
+  .sound-sleeve { top: 21%; right: 6%; width: 37%; height: 52%; padding: 9px 9px 0; }
   .sleeve-image { height: 70%; }
   .sleeve-label { padding: 6px 2px; }
   .sleeve-label span, .sleeve-label small { font-size: 6px; }
@@ -286,45 +306,47 @@ button { font: inherit; }
   .sound-caption { bottom: 9%; font-size: 12px; }
   .culture-title { top: 14%; left: 6%; width: 38%; }
   .culture-title .display-title { font-size: clamp(39px, 9vw, 63px); }
-  .culture-photo { top: 17%; left: 44%; width: 27%; height: 34%; padding: 7px 7px 26px; }
+  .culture-photo { top: 16%; left: 47%; width: 30%; height: 38%; padding: 7px 7px 26px; }
   .culture-collage { top: 56%; left: 7%; right: 7%; width: 86%; grid-template-columns: 1fr 1fr; gap: 8px; }
   .culture-note { min-height: 82px; padding: 10px 9px 8px 35px; }
   .culture-note--artists { grid-column: span 2; min-height: 63px; }
   .culture-note h3 { font-size: 14px; }
-  .culture-note p { font-size: 9px; }
+  .culture-note p { font-size: 10px; }
   .note-icon { top: 10px; left: 10px; font-size: 17px; }
   .culture-sticker, .culture-side-note { display: none; }
   .ending-paper { right: 7%; top: 21%; width: 56%; padding: 6% 5%; }
   .ending-paper .display-title { font-size: clamp(39px, 9vw, 65px); }
-  .ending-paper .deck-copy { font-size: 12px; }
-  .ending-after { font-size: 11px; }
+  .ending-paper .deck-copy { font-size: 13px; }
+  .ending-after { font-size: 12px; }
   .ending-caption { left: 6%; bottom: 10%; font-size: 7px; }
-  .film-copy { top: 15%; left: 6%; width: 53%; }
+  .film-copy { top: 14%; left: 6%; width: 50%; }
   .film-title { font-size: clamp(40px, 9vw, 66px); gap: 9px; }
   .film-title span { font-size: 8px; }
   .film-credits { gap: 8px; margin-top: 16px; }
-  .film-credits p { font-size: 10px; }
-  .film-credits span { font-size: 7px; }
-  .film-synopsis { margin-top: 14px; font-size: 11px; }
-  .film-art { top: 25%; right: 5%; width: 34%; height: 43%; }
-  .film-frame { height: 79%; padding: 7px 7px 22px; }
-  .film-ticket { right: -3%; padding: 10px 12px; }
+  .film-credits p { font-size: 11px; }
+  .film-credits span { font-size: 8px; }
+  .film-synopsis { margin-top: 14px; font-size: 12px; }
+  .film-art { top: 25%; right: 4%; width: 42%; height: 54%; }
+  .film-frame { top: 11%; left: 0; width: 55%; height: 70%; padding: 7px 7px 22px; }
+  .film-poster { top: 0; right: 2%; width: min(78%, 210px); padding: 6px 6px 22px; }
+  .film-poster figcaption { right: 6px; bottom: 6px; left: 6px; font-size: 5px; }
+  .film-ticket { left: -3%; right: auto; bottom: 4%; padding: 8px 10px; }
   .film-ticket span, .film-ticket small { font-size: 6px; }
   .film-ticket strong { font-size: 15px; }
   .film-reel { width: 60px; border-width: 11px; }
-  .whatif-art { top: 23%; left: 6%; width: 40%; height: 49%; }
-  .whatif-copy { top: 15%; right: 6%; width: 45%; }
+  .whatif-art { top: 21%; left: 6%; width: 44%; height: 53%; }
+  .whatif-copy { top: 15%; right: 6%; width: 44%; }
   .whatif-copy .display-title { font-size: clamp(39px, 9vw, 64px); }
-  .whatif-copy .deck-copy { font-size: 11px; }
+  .whatif-copy .deck-copy { font-size: 12px; }
   .missing-note { padding: 13px 14px; }
   .missing-note strong { font-size: clamp(20px, 4.2vw, 30px); }
   .reflection-list { gap: 7px; margin-top: 14px; }
-  .reflection-list p { gap: 7px; font-size: 9px; }
+  .reflection-list p { gap: 7px; font-size: 10px; }
   .whatif-caption { font-size: 10px; }
   .final-copy { left: 7%; top: 24%; width: 82%; }
   .final-quote { font-size: clamp(31px, 7.7vw, 53px); }
-  .final-deck { font-size: 12px; }
-  .final-mark { margin-top: 25px; font-size: 7px; }
+  .final-deck { font-size: 13px; }
+  .final-mark { margin-top: 25px; font-size: 8px; }
   .deck-controls { left: 4%; right: 4%; bottom: 2.5%; gap: 7px; }
   .control-button { flex-basis: 31px; width: 31px; height: 31px; }
   .chapter-ticks { gap: 3px; }
@@ -338,47 +360,53 @@ button { font: inherit; }
 }
 
 @media (max-width: 440px) {
-  .hero-collage { right: 4%; width: 42%; height: 35%; top: 24%; }
+  .hero-collage { right: 4%; width: 44%; height: 40%; top: 23%; }
+  .hero-year-number { font-size: clamp(48px, 15vw, 64px); }
+  .hero-beatlemania { font-size: 8px; }
+  .hero-clipping { padding: 5px 6px; font-size: 5px; letter-spacing: .04em; }
   .hero-copy { top: 10%; }
   .hero-title { font-size: clamp(42px, 12vw, 58px); }
   .hero-subtitle { font-size: clamp(14px, 4vw, 17px); }
   .hero-foot { max-width: 14em; font-size: 8px; line-height: 1.5; }
   .members-photo { top: 16%; height: 26%; }
-  .members-heading .deck-copy { font-size: 11px; }
+  .members-heading .deck-copy { font-size: 12px; }
   .member-list { bottom: 13%; grid-template-columns: 1fr; gap: 5px; }
-  .member-card { min-height: 47px; }
-  .member-card p { font-size: 9px; }
+  .member-card { min-height: 50px; }
+  .member-card p { font-size: 10px; }
   .beginning-photo { top: 13%; height: 25%; }
   .timeline { bottom: 15%; }
   .timeline-item { min-height: 58px; }
-  .mania-collage { top: 19%; bottom: 25%; width: 34%; }
-  .mania-copy { width: 51%; }
+  .mania-collage { top: 18%; bottom: 24%; width: 36%; }
+  .mania-copy { right: 5%; width: 49%; }
   .mania-copy .eyebrow { font-size: 7px; }
   .mania-copy .display-title { font-size: 11vw; }
-  .mania-copy .deck-copy { font-size: 10px; }
-  .mania-tags span { font-size: 5px; letter-spacing: .03em; }
+  .mania-copy .deck-copy { font-size: 11px; }
+  .mania-tags span { font-size: 6px; letter-spacing: .03em; }
   .sound-copy { width: 52%; }
   .sound-copy .display-title { font-size: 10vw; }
-  .sound-points p { font-size: 9px; }
-  .sound-sleeve { width: 34%; height: 43%; top: 25%; }
-  .culture-photo { left: 48%; width: 24%; height: 30%; }
+  .sound-points p { font-size: 10px; }
+  .sound-sleeve { width: 36%; height: 46%; top: 24%; right: 5%; }
+  .culture-photo { left: 48%; width: 27%; height: 33%; }
+  .culture-note p { font-size: 10px; }
   .culture-title .display-title { font-size: 10vw; }
   .culture-collage { top: 53%; }
   .culture-note { min-height: 76px; }
   .culture-note--artists { min-height: 57px; }
   .ending-paper { top: 23%; right: 6%; width: 63%; }
   .ending-paper .display-title { font-size: 10vw; }
-  .film-copy { width: 57%; }
+  .film-copy { width: 51%; }
   .film-title { font-size: 9vw; }
-  .film-credits p { font-size: 9px; }
-  .film-synopsis { font-size: 10px; }
-  .film-art { width: 29%; top: 28%; }
-  .film-ticket { right: -8%; }
-  .whatif-art { width: 36%; height: 42%; top: 27%; }
-  .whatif-copy { width: 51%; right: 5%; }
+  .film-credits p { font-size: 10px; }
+  .film-credits span { font-size: 7px; }
+  .film-synopsis { font-size: 11px; }
+  .film-art { width: 40%; top: 28%; right: 4%; }
+  .film-poster { width: min(85%, 180px); }
+  .film-ticket { left: -3%; right: auto; }
+  .whatif-art { width: 40%; height: 46%; top: 25%; }
+  .whatif-copy { width: 49%; right: 5%; }
   .whatif-copy .display-title { font-size: 9.5vw; }
-  .whatif-copy .deck-copy { font-size: 10px; }
-  .reflection-list p { font-size: 8px; }
+  .whatif-copy .deck-copy { font-size: 11px; }
+  .reflection-list p { font-size: 9px; }
   .final-copy { top: 26%; }
   .final-quote { font-size: 8vw; }
   .chapter-ticks { gap: 2px; }
